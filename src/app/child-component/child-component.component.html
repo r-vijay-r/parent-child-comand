@@ -1,0 +1,8 @@
+<p>
+  {{child}}: <strong>{{message}}</strong>
+  <button
+    (click)="confirm()"
+    [disabled]="!send || confirmed">
+    Done
+  </button>
+</p>

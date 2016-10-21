@@ -1,0 +1,13 @@
+<h2>Parent Cotrol</h2>
+<form #form="ngForm" (ngSubmit)="sendMessage(message.value)" *ngIf="active">
+	
+<input placeholder="Message" name="name" #message required autofocus>
+<button type="submit">Send Message</button>
+</form>
+<app-child-component *ngFor="let child of children"
+  [child]="child">
+</app-child-component>
+<h3>History</h3>
+<ul>
+  <li *ngFor="let event of history">{{event}}</li>
+</ul>

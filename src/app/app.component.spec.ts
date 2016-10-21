@@ -3,7 +3,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
-describe('App: ParentChildComand', () => {
+describe('App: ServiceComponentInteraction', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
